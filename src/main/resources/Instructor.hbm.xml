@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ 	<class name="com.rhsmith.Wrapper.InstructorWrapper" table="Instructor">
+ 	 	<id column="instructorID" name="instructorID" type="java.lang.String">
+ 	 	</id>
+ <property column="instructorName" name="instructorName" type="java.lang.String"/>
+<property column="instructorAddress" name="instructorAddress" type="java.lang.String"/>
+<property column="instructorOffice" name="instructorOffice" type="java.lang.String"/>
+<property column="instructorDepartment"  name="instructorDepartment" type="java.lang.String"/>
+<property column="instructorBirthDate" name="instructorBirthDate" type="java.util.Date"/>
+<property column="instructorEmail"  name="instructorEmail" type="java.lang.String"/>
+<property column="password"  name="password" type="java.lang.String"/>
+ 	</class>
+</hibernate-mapping>

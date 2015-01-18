@@ -1,0 +1,99 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<body style="background-color:#D80000">
+
+<div><img src="http://ceoworld.biz/ceo/wp-content/uploads/2011/11/Robert-H-Smith-School-of-Business1.jpg" width="1450" height="200" alt="" /></div>  </div> 
+<h1 style="text-align:center">
+Course Registration application Form</h1>
+<a href="http://www.rhsmith.umd.edu/">Smith school of business</a>
+<a style="text-align:right">
+
+<head>
+<style>
+#header{
+background-color:#D80000;
+color:black;
+text-align:right;
+padding:5px;
+}
+#nav{
+line-height:30px;
+background-color:#eeeeee;
+height:300px;
+width:100px;
+float:left;
+padding:5px;
+}
+#section {
+background-color:grey;
+color:white;
+width:350px;
+float:right;
+padding:10px;
+text-align:center;
+}
+#footer {
+background-color:grey;
+color:orange;
+clear:both;
+text-align:center;
+padding:5px;
+}
+</style>
+</head>
+<body>
+<h3 style="text-align:right">
+Existing user log in here</h3>
+<div id="header">
+<form action="dbms" method="post">
+ 
+Username: <input type="text" name="user">
+<br>
+Password: <input type="password" name="pwd">
+<br>
+<input type="submit" value="Login">
+
+</form>
+</div>
+<h3 style="text-align:right">
+New User Register here</h3>
+<div id="newuser">
+<centre><form action="dbms" method="post">
+<title>User Registration Page</title>
+UserID:<input type="text" name="Nuid">
+<br>
+Name:<input type="text" name="Nuser">
+<br>
+Password:    <input type="password" name="pwd1">
+<br>
+Date of birth:  <input type="text" name="dob" >
+<br>
+Email:       <input type="text" name="email">
+<br>
+Address:     <input type="text" name="addr" value ="optional">
+<br>
+UserType:     <select name="userType">
+<option value="student">student</option>
+<option value="instructor">instructor</option>
+</select><br>
+Department:   <select name="dName">
+<option value="IS">Information systems</option>
+<option value="ANT">Accounting</option>
+<option value="SC">Supply Chain</option>
+<option value="MBA">MBA</option>
+<option value="CSE">Computer Science</option>
+</select>
+<br>
+<input type="submit" value="Register">
+</div>
+
+</form>
+</centre>
+<div id="footer">
+&copyDBMS Project group 5
+</div>
+</body>
+</html>

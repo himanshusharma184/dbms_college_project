@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ 	<class name="com.rhsmith.Wrapper.CourseRegisteredWrapper" table="CourseRegistered">
+ 	 	<id column="courseID" name="courseID" type="java.lang.String">
+ 	 	</id>
+ <property column="studentID" name="studentID" type="java.lang.String"/>
+<property column="semester" name="semester" type="java.lang.String"/>
+<property column="timing" name="timing" type="java.lang.String"/>
+
+ 	</class>
+</hibernate-mapping>

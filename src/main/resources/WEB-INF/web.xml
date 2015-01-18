@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+    <display-name>rhSmith</display-name>
+    <description>
+        This is a simple web application intended for master's program project
+    </description>
+
+    <servlet>
+        <servlet-name>DBMSProjectServlet</servlet-name>
+        <servlet-class>com.rhsmith.Servlet.InputServlet</servlet-class>
+    </servlet>
+        <servlet>
+        <servlet-name>DBMSProjectServlet1</servlet-name>
+        <servlet-class>com.rhsmith.Servlet.PersistanceServlet</servlet-class>
+    </servlet>
+
+        <servlet>
+        <servlet-name>DBMSProjectServlet2</servlet-name>
+        <servlet-class>com.rhsmith.Servlet.ReturningUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DBMSProjectServlet</servlet-name>
+        <url-pattern>/dbms</url-pattern>
+    </servlet-mapping>
+        <servlet-mapping>
+        <servlet-name>DBMSProjectServlet1</servlet-name>
+        <url-pattern>/dbms/add</url-pattern>
+    </servlet-mapping>
+            <servlet-mapping>
+        <servlet-name>DBMSProjectServlet1</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+    
+       <servlet-mapping>
+        <servlet-name>DBMSProjectServlet2</servlet-name>
+        <url-pattern>/dbms/returning</url-pattern>
+    </servlet-mapping>
+    
+           <servlet-mapping>
+        <servlet-name>DBMSProjectServlet2</servlet-name>
+        <url-pattern>/returning</url-pattern>
+    </servlet-mapping>
+
+<welcome-file-list>
+<welcome-file>login.html</welcome-file> 
+</welcome-file-list>
+
+</web-app> 

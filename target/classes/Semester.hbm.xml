@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ 	<class name="com.rhsmith.Wrapper.SemesterWrapper" table="Semester">
+ 	 	<id column="semID" name="semID" type="java.lang.String">
+ 	 	</id>
+
+ <property column="Semester" name="Semester" type="java.lang.String"/>
+  <property column="courseID" name="courseID" type="java.lang.String"/>
+   <property column="CalYear" name="CalYear" type="java.lang.Integer"/>
+
+ 	</class>
+</hibernate-mapping>
